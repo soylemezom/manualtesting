@@ -1,2 +1,42 @@
 automation testing
+package newproject1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class login {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		System.setProperty("webdriver.chrome.driver","/Users/mustafasoylemezo/Desktop/chromedriver_mac_arm64/chromedriver");
+		
+		WebDriver driver= new ChromeDriver();
+		
+		
+		driver.get("https://www.pnc.com/en/personal-banking/banking/online-and-mobile-banking/online-banking.html");
+		
+		driver.findElement(By.xpath("//span[@class='cmp-button__text']")).click();
+		
+		
+		
+		
+		driver.findElement(By.xpath("//input[@name='userId']")).sendKeys("cacaccoo");
+		
+		
+		
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("123456");
+		
+		
+		driver.findElement(By.xpath("//input[@role='button']")).click();
+		
+		
+		
+	
+		
+		
+	}
+
+}
 
